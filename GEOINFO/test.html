@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Test Grila</title>
+<link rel="icon" href="https://media.istockphoto.com/vectors/kngru-vector-id1068307072?k=20&m=1068307072&s=612x612&w=0&h=q4qeqFp4tOwbrSjLBZbg-3eiW_1JlGZ17YHt3ALhD88=" type="image/x-icon">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  li {
+    color: black;
+  }
+</style>
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Test Grila</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Prima pagină</a></li>
+      <li class="nav-item"><a class="nav-link" href="relief.htm">Relieful</a></li>
+      <li class="nav-item"><a class="nav-link" href="clima.html">Clima</a></li>
+      <li class="nav-item"><a class="nav-link" href="hidro.html">Hidrografie</a></li>
+      <li class="nav-item"><a class="nav-link" href="vege.html">Vegetatia si fauna</a></li>
+      <li class="nav-item"><a class="nav-link" href="pop.html">Populatie</a></li>
+      <li class="nav-item"><a class="nav-link" href="oras.html">Orase</a></li>
+      <li class="nav-item"><a class="nav-link" href="economia.html">Economia</a></li>
+      <li class="nav-item"><a class="nav-link" href="turismul.html">Turismul</a></li>
+      <li class="nav-item"><a class="nav-link" href="test.html">Test grilă</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h1 class="text-center">Test grilă</h1>
+  <form method="post" name="quiz" class="bg-light p-4 rounded" onsubmit="getScore(); return false;">
+    <div class="form-group">
+      <label>1. Capitala Australiei este:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" value="a">
+        <label class="form-check-label">a) Sidney</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" value="b">
+        <label class="form-check-label">b) Canberra</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="q1" value="c">
+        <label class="form-check-label">c) Melbourne</label>
+      </div>
+    </div>
+    
+	<div class="form-group">
+		<label>2. Cel mai populat oras din Australia este:</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q2" value="a">
+		  <label class="form-check-label">a) Sidney</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q2" value="b">
+		  <label class="form-check-label">b) Adelaide</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q2" value="c">
+		  <label class="form-check-label">c) Melbourne</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>3. Un animal care traieste in Australia este:</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q3" value="a">
+		  <label class="form-check-label">a) babuinul</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q3" value="b">
+		  <label class="form-check-label">b) gorila</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q3" value="c">
+		  <label class="form-check-label">c) pasarea lira</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>4. Un fluviu care trece prin Australia este:</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q4" value="a">
+		  <label class="form-check-label">a) Fluviul Darling</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q4" value="b">
+		  <label class="form-check-label">b) Nilul</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q4" value="c">
+		  <label class="form-check-label">c) Amazonul</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>5. Un lac din Austraia este:</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q5" value="a">
+		  <label class="form-check-label">a) Lacu Eyre</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q5" value="b">
+		  <label class="form-check-label">b) Lacul Baikal</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q5" value="c">
+		  <label class="form-check-label">c) Lacul Sfanta Ana</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>6. Simbolul Australiei este:</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q6" value="a">
+		  <label class="form-check-label">a) Cangurul</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q6" value="b">
+		  <label class="form-check-label">b) Emu</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q6" value="c">
+		  <label class="form-check-label">c) Ursul Koala</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>7. Eucaliptul creste in Australia.</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q7" value="a">
+		  <label class="form-check-label">a) Adevărat</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q7" value="b">
+		  <label class="form-check-label">b) Fals</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>8. Clima Austraiei este predominant rece.</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q8" value="a">
+		  <label class="form-check-label">a) Adevărat</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q8" value="b">
+		  <label class="form-check-label">b) Fals</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>9. Australia este o tara urbanizata.</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q9" value="a">
+		  <label class="form-check-label">a) Adevărat</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q9" value="b">
+		  <label class="form-check-label">b) Fals</label>
+		</div>
+	  </div>
+  
+	  <div class="form-group">
+		<label>10. Tara Australia ocupa mai multe continente.</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q10" value="a">
+		  <label class="form-check-label">a) Adevărat</label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="q10" value="b">
+		  <label class="form-check-label">b) Fals</label>
+		</div>
+	  </div>
+
+    <button type="submit" class="btn btn-primary">Scorul tău</button>
+    <button type="reset" class="btn btn-secondary">Reia întrebările</button>
+    <div class="form-group mt-3">
+      <label><strong>Scorul dumneavoastră la acest test este:</strong></label>
+      <input class="form-control" type="text" size="5" name="percentage" readonly>
+    </div>
+    <div class="form-group">
+      <label><strong>Răspunsuri corecte:</strong></label>
+      <textarea class="form-control" name="solutions" wrap="virtual" rows="11" cols="45" readonly>Aici vor apărea răspunsurile corecte, după completarea testului.</textarea>
+    </div>
+  </form>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3">
+    &copy; <a href="test.html">Test Grilă</a>
+  </div>
+</footer>
+
+<script>
+	const numQues = 10;
+	const numChoi = 3;
+  
+	const answers = [
+	  "b", // 1. b) Canberra
+	  "a", // 2. a) Sydney
+	  "c", // 3. c) pasarea lira
+	  "a", // 4. a) Fluviul Darling
+	  "a", // 5. a) Lacu Eyre
+	  "a", // 6. a) Cangurul
+	  "a", // 7. a) Adevărat
+	  "b", // 8. b) Fals
+	  "a", // 9. a) Adevărat
+	  "b"  // 10. b) Fals
+	];
+  
+	function getScore() {
+	  let score = 0;
+	  for (let i = 0; i < numQues; i++) {
+		const currSelection = document.querySelector(`input[name="q${i + 1}"]:checked`);
+		if (currSelection && currSelection.value === answers[i]) {
+		  score++;
+		}
+	  }
+	  const percentage = ((score / numQues) * 100);
+	  document.getElementsByName('percentage')[0].value = `${percentage}%`;
+  
+	  let correctAnswers = "";
+	  for (let i = 0; i < numQues; i++) {
+		correctAnswers += `${i + 1}. ${answers[i]}\r\n`;
+	  }
+	  document.getElementsByName('solutions')[0].value = correctAnswers;
+	}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+ 
